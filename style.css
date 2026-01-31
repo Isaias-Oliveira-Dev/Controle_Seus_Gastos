@@ -30,7 +30,8 @@ input {
     border: 1px solid #ddd;
     border-radius: 5px;
     flex: 1;
-    min-width: 200px;
+    min-width: 0px;
+    width: 100%;
 }
 
 button {
@@ -48,6 +49,8 @@ button:hover { background-color: #218838; }
 
 .table-container {
     overflow-x: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
 }
 
 table {
@@ -74,5 +77,10 @@ th, td {
 
     .input-group {
         flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
     }
 }
