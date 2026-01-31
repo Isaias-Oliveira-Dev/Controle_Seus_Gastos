@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Gerenciador de Gastos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Controle de Gastos</h1>
+        
+        <div class="input-group">
+            <input type="text" id="nomeItem" placeholder="Ex: Teclado Mecânico">
+            <input type="number" id="valorItem" placeholder="R$ 0,00">
+            <button onclick="adicionarGasto()">Adicionar</button>
+        </div>
+
+        <table id="tabelaGastos">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+
+        <div class="resultados">
+            <p><strong>Total Acumulado:</strong> R$ <span id="totalGasto">0.00</span></p>
+            <p class="destaque"><strong>Mais Caro:</strong> <span id="itemMaisCaro">---</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
